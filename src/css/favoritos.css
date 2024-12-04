@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  
+.centralizar {
+    text-align: center;
+    padding: 20px;
+}
+  
+h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+span {
+    color: #5d17ea;
+}
+  
+p {
+    font-size: 16px;
+}
+  
+.wishlist {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+.product-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Garante que o conteúdo seja distribuído */
+    height: 100%; /* Garante que todas as cartas tenham o mesmo tamanho */
+    position: relative; /* Adiciona o contexto de posicionamento */
+}
+  
+.product-card img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+  
+.product-card h2 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+  
+.old-price {
+    text-decoration: line-through;
+    color: #888;
+}
+  
+.current-price {
+    font-size: 18px;
+    color: #28a745;
+    font-weight: bold;
+}
+  
+select {
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+  
+.add-carrinho {
+    background-color: #5d17ea;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+  
+.add-carrinho:hover {
+    background-color: #444444;
+}
+  
+.product-card > div:last-child {
+    margin-top: auto; /* Garante que o botão fique na parte inferior */
+}
+
+.btn-fechar {
+    color: #000;
+    background-color: #fff;
+    border: none;
+    padding: 4px 6px;
+    border-radius: 50%;
+    font-size: 17px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+    transition: 0.2s;
+}
+  
+.btn-fechar:hover {
+    background-color: #6666667a;
+    color: #fff;
+}
